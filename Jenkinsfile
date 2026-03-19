@@ -156,15 +156,11 @@ pipeline {
 
                     kubectl get nodes 
 
-  
+
 
                     echo "Deploying..." 
 
-                    kubectl set image deployment/jenkins-app \ 
-
-                    jenkins-app=$IMAGE_NAME:$IMAGE_TAG 
-
-  
+                    kubectl set image deployment/jenkins-app jenkins-app=$IMAGE_NAME:$IMAGE_TAG 
 
                     kubectl rollout status deployment/jenkins-app --timeout=60s 
 
