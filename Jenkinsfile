@@ -8,7 +8,7 @@ pipeline {
 
     environment { 
 
-        IMAGE_NAME = "buzzz14/jenkins-demo-app" 
+        IMAGE_NAME = "buzzz14/jenkins-practice-lab" 
 
         IMAGE_TAG = "${BUILD_NUMBER}" 
 
